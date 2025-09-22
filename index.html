@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiRed Social</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MiRed</div>
+    <input type="text" placeholder="Buscar usuarios o publicaciones..." class="buscador" />
+    <nav>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button onclick="mostrarSeccion('perfil')">Perfil</button>
+      <button onclick="mostrarSeccion('publicaciones')">Publicaciones</button>
+      <button onclick="mostrarSeccion('configuracion')">Configuración</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="seccion activa">
+      <div class="portada">
+        <h2>Bienvenido a MiRed</h2>
+        <p>Explora las publicaciones de la comunidad</p>
+        <button class="btn-publicar">➕ Añadir publicación</button>
+      </div>
+
+      <div class="layout">
+        <!-- Barra izquierda -->
+        <aside class="sidebar izquierda">
+          <h3>Categorías</h3>
+          <ul>
+            <li>#Peluches</li>
+            <li>#Python</li>
+            <li>#Pokémon</li>
+            <li>#FNAF</li>
+          </ul>
+        </aside>
+
+        <!-- Galería central -->
+        <div class="galeria">
+          <div class="card">
+            <img src="images/publicacion1.png" alt="Publicación 1" />
+            <div class="info">
+              <strong>@LunaCode</strong>
+              <p>Mi nuevo peluche favorito 🧸✨</p>
+              <div class="acciones">
+                <span>❤️</span>
+                <span>💬</span>
+                <span>🔁</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img  src="images/publicacion2.png" alt="Publicación 2" />
+            <div class="info">
+              <strong>@PixelTrainer</strong>
+              <p>¡Decore mi habitacion! me gusta :D</p>
+              <div class="acciones">
+                <span>👍</span>
+                <span>💬</span>
+                <span>🔁</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img  src="images/publicacion4.png" alt="Publicación 4" />
+            <div class="info">
+              <strong>@Lil_artist07</strong>
+              <p>Dibujando watitos</p>
+              <div class="acciones">
+                <span>👍</span>
+                <span>💬</span>
+                <span>🔁</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img  src="images/publicacion5.png" alt="Publicación 5" />
+            <div class="info">
+              <strong>@Fer178_</strong>
+              <p> Una fotito nomas </p>
+              <div class="acciones">
+                <span>👍</span>
+                <span>💬</span>
+                <span>🔁</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/publicacion3.png" alt="Publicación 3" />
+            <div class="info">
+              <strong>@FNAF_Fan</strong>
+              <p>No quiero hacer la tarea lmao</p>
+              <div class="acciones">
+                <span>😱</span>
+                <span>💬</span>
+                <span>🔁</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Barra derecha -->
+        <aside class="sidebar derecha">
+          <h3>Zona de Amigos</h3>
+          <div class="amigos">
+            <div class="amigo"><img src="images/amigo1.png" alt="Amigo 1" /><span>@CodeGirl</span></div>
+            <div class="amigo"><img src="images/amigo2.png" alt="Amigo 2" /><span>@DevPeluche</span></div>
+            <div class="amigo"><img src="images/amigo3.png" alt="Amigo 3" /><span>@YazminDev</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil" class="seccion">
+
+  <div class="perfil-contenido">
+    <div class="perfil-info">
+      <img width="200" height="200" src="images/avatar.png" alt="Avatar" class="avatar" />
+      <h2>@YazminDev</h2>
+      <p class="bio">
+        Fan del FNAF, programadora creativa, vendedora de peluches y amante de los proyectos temáticos 💻🧸
+      </p>
+      <button onclick="mostrarSeccion('inicio')">← Regresar</button>
+    </div>
+
+    <div class="perfil-extra">
+      <div class="intereses">
+        <h3>🎯 Intereses</h3>
+        <ul>
+          <li>Diseño web</li>
+          <li>Programación en Python</li>
+          <li>Peluches personalizados</li>
+          <li>Galerías de arte digital</li>
+        </ul>
+      </div>
+
+      <div class="galeria-personal">
+        <h3>🖼️ Galería personal</h3>
+        <div class="mini-galeria">
+          <img height="400" width="400" src="images/galeria1.png" alt="Imagen 1" />
+          <img height="400" width="400"src="images/galeria2.png" alt="Imagen 2" />
+          <img height="400" width="400"src="images/galeria3.png" alt="Imagen 3" />
+        </div>
+      </div>
+
+      <div class="estadisticas">
+        <h3>📊 Estadísticas</h3>
+        <ul>
+          <li>Publicaciones: <strong>24</strong></li>
+          <li>Amigos: <strong>18</strong></li>
+          <li>Likes recibidos: <strong>132</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- PUBLICACIONES -->
+    <section id="publicaciones" class="seccion">
+      <h2>Publicaciones recientes</h2>
+      <div class="post">
+        <p>¡Hoy aprendí a usar Flexbox en CSS!</p>
+        <div class="acciones">
+          <span>👍</span>
+          <span>💬</span>
+          <span>🔁</span>
+        </div>
+      </div>
+      <div class="post">
+        <p>Subí mi proyecto a GitHub y funciona perfecto 🎉</p>
+        <div class="acciones">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>🔁</span>
+        </div>
+      </div>
+      <button onclick="mostrarSeccion('inicio')">← Regresar</button>
+    </section>
+  </main>
+
+  <!-- CONFIGURACIÓN -->
+    <section id="configuracion" class="seccion">
+      <h2>⚙️ Configuración de la cuenta</h2>
+      <form>
+        <label>Nombre de usuario: <input type="text" value="@YazminDev" /></label><br><br>
+        <label>Email: <input type="email" value="ejemplo@email.com" /></label><br><br>
+        <label>Contraseña: <input type="password" placeholder="••••••••" /></label><br><br>
+        <button type="submit">Guardar cambios</button>
+      </form>
+      <br>
+      <a href="index.html">← Regresar</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MiRed Social</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('.seccion').forEach(sec => {
+        sec.classList.remove('activa');
+      });
+      document.getElementById(id).classList.add('activa');
+    }
+  </script>
+</body>
+</html>
